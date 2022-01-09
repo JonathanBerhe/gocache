@@ -10,7 +10,7 @@ func TestCache(t *testing.T) {
 	}
 
 	value, err := cache.Get("a")
-	if err != nil{
+	if err != nil {
 		t.Error("Cannot get value from Cache instance")
 	}
 	if value != 1 {
